@@ -5,7 +5,7 @@
 //32679 -> 6
 
 Console.WriteLine("Введите число n: ");
-int n = int.Parse(Console.ReadLine());
+int n = Math.Abs(int.Parse(Console.ReadLine()));
 
 if(n<=99)
 {
