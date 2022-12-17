@@ -4,17 +4,22 @@
 // Если N = 3 -> 0 1 1
 // Если N = 7 -> 0 1 1 2 3 5 8
 
-Console.WriteLine("Введите число:  ");
-int num = int.Parse(Console.ReadLine()!);
-int [] listFib = new int[num];
-Console.Write(listFib[0]);
 
-listFib[0] = 0; Console.Write(listFib[0]!);
+
+Console.WriteLine("Введите число:  ");
+
+void MetFib(int Num)
+{
+
+int [] listFib = new int[Num];
+Console.Write(listFib[0]);
 listFib[1] = 1; Console.Write(listFib[1]!);
 
-for(int i = 2; i < num; i++)
+for(int i = 2; i < Num; i++)
 {
     listFib[i] = listFib[i-1]+listFib[i-2];
     Console.Write(listFib[i]);
 }
-
+}
+int num = int.Parse(Console.ReadLine()!);
+MetFib(num);
