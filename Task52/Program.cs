@@ -54,7 +54,7 @@ void Average(int[,] array)
                  sum += array[i,j];
                  
         }
-        Console.WriteLine($"Среднее арифметическое столбца {j} равно -->> {sum / array.GetLength(0)}");
+        Console.WriteLine($"Среднее арифметическое столбца {j} равно -->> {Math.Round(sum / array.GetLength(0),1)}");
     }
     Console.ReadLine();
 }
